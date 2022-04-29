@@ -10,7 +10,11 @@ hosts_to_block=("facebook.com" "imdb.com" "instagram.com")
 ## Usage
 
 Run by:
-Run script providing path to hosts file as argument:
+Run script providing path to hosts file and desired status as arguments:
 ```script
-./host_blocker.sh /etc/hosts
+# Add blocked domains
+./host_blocker.sh /etc/hosts 1
+
+# Remove domain blocking
+./host_blocker.sh /etc/hosts 0
 ```
